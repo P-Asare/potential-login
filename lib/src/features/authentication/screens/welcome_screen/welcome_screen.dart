@@ -13,6 +13,7 @@ class WelcomeScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image(
               image: const AssetImage(welcomeImage),
@@ -24,9 +25,15 @@ class WelcomeScreen extends StatelessWidget {
                   mainTextWelcome,
                   style: Theme.of(context).textTheme.bodyLarge,
                 ),
-                Text(
-                  subTextWelcome,
-                  style: Theme.of(context).textTheme.bodySmall,
+                const SizedBox(
+                  height: 3,
+                ),
+                Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                    subTextWelcome,
+                    style: Theme.of(context).textTheme.displayMedium,
+                  ),
                 ),
               ],
             ),
