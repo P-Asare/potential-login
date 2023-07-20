@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:login_app/src/utils/themes/widget_themes/elevated_button_theme.dart';
+import 'package:login_app/src/utils/themes/widget_themes/outlined_button_theme.dart';
 import 'package:login_app/src/utils/themes/widget_themes/text_theme.dart';
 
 class AppTheme {
@@ -20,6 +22,8 @@ class AppTheme {
       800: Color(0xCCFFE200),
       900: Color(0xE6FFE200),
     }),
+    elevatedButtonTheme: PElevatedButtonTheme.lightElevatedButtonTheme,
+    outlinedButtonTheme: POutlinedButtonTheme.lightOutlinedButtonTheme,
   );
 
   static ThemeData darkTheme = ThemeData(
@@ -37,5 +41,7 @@ class AppTheme {
       800: Color(0xCCFFE200),
       900: Color(0xE6FFE200),
     }),
+    elevatedButtonTheme: PElevatedButtonTheme.darkElevatedButtonTheme,
+    outlinedButtonTheme: POutlinedButtonTheme.darkOutlinedButtonTheme,
   );
 }

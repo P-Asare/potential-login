@@ -70,9 +70,6 @@ class WelcomeScreen extends StatelessWidget {
                         shape: const RoundedRectangleBorder(),
                         foregroundColor: Colors.white,
                         backgroundColor: Colors.black87,
-                        // side: const BorderSide(
-                        //   color: Colors.black87,
-                        // ),
                         padding: const EdgeInsets.symmetric(
                           vertical: 15,
                         ),
