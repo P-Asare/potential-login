@@ -20,4 +20,4 @@ const String subTextOnBoard3 =
 // Welcome Screen
 const String mainTextWelcome = "Construct your future";
 const String subTextWelcome =
-    "Let's put your education on the\ndevelopment highway";
+    "Let's put your education on the \ndevelopment highway";

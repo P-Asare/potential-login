@@ -35,7 +35,7 @@ class OnBoardPageWidget extends StatelessWidget {
             children: [
               Text(
                 mainText,
-                style: Theme.of(context).textTheme.bodyLarge,
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               Text(
                 subText,

@@ -17,6 +17,11 @@ class AppTextTheme {
       fontSize: 18,
       fontWeight: FontWeight.bold,
     ),
+    bodyMedium: GoogleFonts.poppins(
+      color: Colors.black87,
+      fontSize: 18,
+      fontWeight: FontWeight.bold,
+    ),
     bodySmall: GoogleFonts.poppins(
       color: Colors.black87,
       fontSize: 15,

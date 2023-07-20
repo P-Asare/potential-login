@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_app/src/constants/text_strings.dart';
 
 import '../../../../constants/image_strings.dart';
 
@@ -17,7 +18,18 @@ class WelcomeScreen extends StatelessWidget {
               image: const AssetImage(welcomeImage),
               height: screenHeight * 0.6,
             ),
-            
+            Column(
+              children: [
+                Text(
+                  mainTextWelcome,
+                  style: Theme.of(context).textTheme.bodyLarge,
+                ),
+                Text(
+                  subTextWelcome,
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
+              ],
+            ),
           ],
         ),
       ),
