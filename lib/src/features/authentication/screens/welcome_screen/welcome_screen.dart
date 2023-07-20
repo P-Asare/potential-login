@@ -48,16 +48,16 @@ class WelcomeScreen extends StatelessWidget {
                   Expanded(
                     child: OutlinedButton(
                       onPressed: () {},
-                      style: OutlinedButton.styleFrom(
-                        shape: const RoundedRectangleBorder(),
-                        foregroundColor: Colors.black87,
-                        side: const BorderSide(
-                          color: Colors.black87,
-                        ),
-                        padding: const EdgeInsets.symmetric(
-                          vertical: 15,
-                        ),
-                      ),
+                      // style: OutlinedButton.styleFrom(
+                      //   shape: const RoundedRectangleBorder(),
+                      //   foregroundColor: Colors.black87,
+                      //   side: const BorderSide(
+                      //     color: Colors.black87,
+                      //   ),
+                      //   padding: const EdgeInsets.symmetric(
+                      //     vertical: 15,
+                      //   ),
+                      // ),
                       child: const Text(loginString),
                     ),
                   ),
@@ -66,14 +66,14 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                   Expanded(
                     child: ElevatedButton(
-                      style: OutlinedButton.styleFrom(
-                        shape: const RoundedRectangleBorder(),
-                        foregroundColor: Colors.white,
-                        backgroundColor: Colors.black87,
-                        padding: const EdgeInsets.symmetric(
-                          vertical: 15,
-                        ),
-                      ),
+                      // style: OutlinedButton.styleFrom(
+                      //   shape: const RoundedRectangleBorder(),
+                      //   foregroundColor: Colors.white,
+                      //   backgroundColor: Colors.black87,
+                      //   padding: const EdgeInsets.symmetric(
+                      //     vertical: 15,
+                      //   ),
+                      // ),
                       onPressed: () {},
                       child: const Text(signUpString),
                     ),
