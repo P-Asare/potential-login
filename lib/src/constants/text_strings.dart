@@ -16,3 +16,8 @@ const String subTextOnBoard2 =
 const String mainTextOnBoard3 = "Engage with content";
 const String subTextOnBoard3 =
     "We provide ordered and up-to-date data\non university programmes";
+
+// Welcome Screen
+const String mainTextWelcome = "Construct your future";
+const String subTextWelcome =
+    "Let's put your education on the\ndevelopment highway";
