@@ -13,6 +13,7 @@ class WelcomeScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image(
@@ -36,6 +37,52 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 40,
+                right: 40,
+              ),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: OutlinedButton(
+                      onPressed: () {},
+                      style: OutlinedButton.styleFrom(
+                        shape: const RoundedRectangleBorder(),
+                        foregroundColor: Colors.black87,
+                        side: const BorderSide(
+                          color: Colors.black87,
+                        ),
+                        padding: const EdgeInsets.symmetric(
+                          vertical: 15,
+                        ),
+                      ),
+                      child: const Text(loginString),
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  Expanded(
+                    child: ElevatedButton(
+                      style: OutlinedButton.styleFrom(
+                        shape: const RoundedRectangleBorder(),
+                        foregroundColor: Colors.white,
+                        backgroundColor: Colors.black87,
+                        // side: const BorderSide(
+                        //   color: Colors.black87,
+                        // ),
+                        padding: const EdgeInsets.symmetric(
+                          vertical: 15,
+                        ),
+                      ),
+                      onPressed: () {},
+                      child: const Text(signUpString),
+                    ),
+                  )
+                ],
+              ),
             ),
           ],
         ),
