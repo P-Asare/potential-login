@@ -8,6 +8,7 @@ class PElevatedButtonTheme {
       shape: const RoundedRectangleBorder(),
       foregroundColor: Colors.white,
       backgroundColor: Colors.black87,
+      elevation: 0,
       padding: const EdgeInsets.symmetric(
         vertical: 15,
       ),
@@ -19,6 +20,7 @@ class PElevatedButtonTheme {
       shape: const RoundedRectangleBorder(),
       foregroundColor: Colors.black87,
       backgroundColor: Colors.white,
+      elevation: 0,
       padding: const EdgeInsets.symmetric(
         vertical: 15,
       ),

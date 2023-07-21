@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 import 'package:login_app/src/constants/image_strings.dart';
 import 'package:login_app/src/constants/text_strings.dart';
+import 'package:login_app/src/features/authentication/screens/welcome_screen/welcome_screen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import 'on_boarding_widget.dart';
@@ -49,6 +50,22 @@ class _OnBoardState extends State<OnBoard> {
       ), // page 3
     ];
 
+    void nextPage() {
+      int nextPage = controller.currentPage + 1;
+      if (nextPage <= pages.length - 1) {
+        controller.animateToPage(
+          page: nextPage,
+        );
+      } else {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const WelcomeScreen(),
+          ),
+        );
+      }
+    }
+
     return Scaffold(
         body: Stack(
       children: [
@@ -63,12 +80,7 @@ class _OnBoardState extends State<OnBoard> {
           bottom: 80,
           left: 145,
           child: OutlinedButton(
-            onPressed: () {
-              int nextPage = controller.currentPage + 1;
-              controller.animateToPage(
-                page: nextPage,
-              );
-            },
+            onPressed: () => nextPage(),
             style: ElevatedButton.styleFrom(
               side: const BorderSide(color: Colors.black),
               shape: const CircleBorder(),

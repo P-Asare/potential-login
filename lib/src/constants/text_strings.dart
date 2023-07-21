@@ -23,3 +23,12 @@ const String subTextWelcome =
     "Let us put your education on \n   the development highway";
 const String loginString = "LOGIN";
 const String signUpString = "SIGNUP";
+
+// Login Screen
+const String mainTextLogin = "Welcome back,";
+const String subTextLogin = "Make it right. Make it work. Make it in.";
+const String forgotPassword = "Forget Password?";
+const String email = "E-Mail";
+const String password = "Password";
+const String googleText = "Sign-in with Google";
+const String account = "Don't have an account?";
