@@ -8,17 +8,24 @@ class WelcomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double screenHeight = MediaQuery.of(context).size.height;
+    var mediaQuery = MediaQuery.of(context);
+    final double screenHeight = mediaQuery.size.height;
+    var brightness = mediaQuery.platformBrightness;
+    final bool isDarkMode = brightness == Brightness.dark;
 
     return Scaffold(
+      backgroundColor: (isDarkMode) ? Colors.black87 : Colors.yellow,
       body: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image(
-              image: const AssetImage(welcomeImage),
-              height: screenHeight * 0.6,
+            Padding(
+              padding: const EdgeInsets.only(left: 40),
+              child: Image(
+                image: const AssetImage(welcomeImage),
+                height: screenHeight * 0.6,
+              ),
             ),
             Column(
               children: [
@@ -38,6 +45,9 @@ class WelcomeScreen extends StatelessWidget {
                 ),
               ],
             ),
+            const SizedBox(
+              height: 30,
+            ),
             Padding(
               padding: const EdgeInsets.only(
                 left: 40,
@@ -48,16 +58,6 @@ class WelcomeScreen extends StatelessWidget {
                   Expanded(
                     child: OutlinedButton(
                       onPressed: () {},
-                      // style: OutlinedButton.styleFrom(
-                      //   shape: const RoundedRectangleBorder(),
-                      //   foregroundColor: Colors.black87,
-                      //   side: const BorderSide(
-                      //     color: Colors.black87,
-                      //   ),
-                      //   padding: const EdgeInsets.symmetric(
-                      //     vertical: 15,
-                      //   ),
-                      // ),
                       child: const Text(loginString),
                     ),
                   ),
@@ -66,14 +66,6 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                   Expanded(
                     child: ElevatedButton(
-                      // style: OutlinedButton.styleFrom(
-                      //   shape: const RoundedRectangleBorder(),
-                      //   foregroundColor: Colors.white,
-                      //   backgroundColor: Colors.black87,
-                      //   padding: const EdgeInsets.symmetric(
-                      //     vertical: 15,
-                      //   ),
-                      // ),
                       onPressed: () {},
                       child: const Text(signUpString),
                     ),
