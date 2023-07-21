@@ -14,6 +14,11 @@ class AppTextTheme {
     ),
     bodyLarge: GoogleFonts.poppins(
       color: Colors.black87,
+      fontSize: 30,
+      fontWeight: FontWeight.bold,
+    ),
+    bodyMedium: GoogleFonts.poppins(
+      color: Colors.black87,
       fontSize: 18,
       fontWeight: FontWeight.bold,
     ),
@@ -21,6 +26,10 @@ class AppTextTheme {
       color: Colors.black87,
       fontSize: 15,
     ),
+    displayMedium: GoogleFonts.poppins(
+      color: Colors.black87,
+      fontSize: 18,
+      ),
     displaySmall: GoogleFonts.poppins(
       color: Colors.black87,
       fontSize: 14,
@@ -29,14 +38,36 @@ class AppTextTheme {
   );
 
   static TextTheme darkTheme = TextTheme(
-    titleSmall: GoogleFonts.poppins(
-      color: Colors.white70,
+    titleSmall: GoogleFonts.montserrat(
+      color: Colors.white,
       fontSize: 20,
+    ),
+    headlineLarge: GoogleFonts.poppins(
+      color: Colors.white,
+      fontSize: 25,
       fontWeight: FontWeight.bold,
     ),
-    headlineLarge: GoogleFonts.montserrat(
-      color: Colors.white70,
-      fontSize: 25,
+    bodyLarge: GoogleFonts.poppins(
+      color: Colors.white,
+      fontSize: 30,
+      fontWeight: FontWeight.bold,
+    ),
+    bodyMedium: GoogleFonts.poppins(
+      color: Colors.white,
+      fontSize: 18,
+      fontWeight: FontWeight.bold,
+    ),
+    bodySmall: GoogleFonts.poppins(
+      color: Colors.white,
+      fontSize: 15,
+    ),
+    displayMedium: GoogleFonts.poppins(
+      color: Colors.white,
+      fontSize: 18,
+      ),
+    displaySmall: GoogleFonts.poppins(
+      color: Colors.white,
+      fontSize: 14,
       fontWeight: FontWeight.bold,
     ),
   );

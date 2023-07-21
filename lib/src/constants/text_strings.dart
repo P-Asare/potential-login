@@ -16,3 +16,19 @@ const String subTextOnBoard2 =
 const String mainTextOnBoard3 = "Engage with content";
 const String subTextOnBoard3 =
     "We provide ordered and up-to-date data\non university programmes";
+
+// Welcome Screen
+const String mainTextWelcome = "Construct your future";
+const String subTextWelcome =
+    "Let us put your education on \n   the development highway";
+const String loginString = "LOGIN";
+const String signUpString = "SIGNUP";
+
+// Login Screen
+const String mainTextLogin = "Welcome back,";
+const String subTextLogin = "Make it right. Make it work. Make it in.";
+const String forgotPassword = "Forget Password?";
+const String email = "E-Mail";
+const String password = "Password";
+const String googleText = "Sign-in with Google";
+const String account = "Don't have an account?";
