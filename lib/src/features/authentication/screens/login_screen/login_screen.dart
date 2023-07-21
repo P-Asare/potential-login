@@ -32,54 +32,91 @@ class LoginScreen extends StatelessWidget {
 
                 /*Second section of page */
                 Form(
-                    child: Container(
-                  padding: const EdgeInsets.symmetric(
-                    vertical: 30,
-                  ),
-                  child: Column(
-                    children: [
-                      TextFormField(
-                        decoration: const InputDecoration(
-                          prefixIcon: Icon(Icons.person),
-                          border: OutlineInputBorder(),
-                          labelText: email,
-                          hintText: email,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 20,
+                    ),
+                    child: Column(
+                      children: [
+                        TextFormField(
+                          decoration: const InputDecoration(
+                            prefixIcon: Icon(Icons.person),
+                            border: OutlineInputBorder(),
+                            labelText: email,
+                            hintText: email,
+                          ),
                         ),
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      TextFormField(
-                        decoration: const InputDecoration(
-                          prefixIcon: Icon(Icons.fingerprint),
-                          suffixIcon: Icon(Icons.remove_red_eye_rounded),
-                          border: OutlineInputBorder(),
-                          labelText: password,
-                          hintText: password,
+                        const SizedBox(
+                          height: 10,
                         ),
-                      ),
-                      Align(
-                        alignment: Alignment.centerRight,
-                        child: TextButton(
-                          onPressed: () {},
-                          child: const Text(
-                            forgotPassword,
-                            style: TextStyle(
-                              color: Colors.blue,
+                        TextFormField(
+                          decoration: const InputDecoration(
+                            prefixIcon: Icon(Icons.fingerprint),
+                            suffixIcon: Icon(Icons.remove_red_eye_rounded),
+                            border: OutlineInputBorder(),
+                            labelText: password,
+                            hintText: password,
+                          ),
+                        ),
+                        Align(
+                          alignment: Alignment.centerRight,
+                          child: TextButton(
+                            onPressed: () {},
+                            child: const Text(
+                              forgotPassword,
+                              style: TextStyle(
+                                color: Colors.blue,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                      SizedBox(
-                        width: double.infinity,
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          child: const Text(loginString),
+                        SizedBox(
+                          width: double.infinity,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: const Text(loginString),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+
+                /*Third section */
+                Column(
+                  children: [
+                    Text(
+                      "OR",
+                      style: Theme.of(context).textTheme.bodySmall,
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    SizedBox(
+                      width: double.infinity,
+                      child: OutlinedButton.icon(
+                        onPressed: () {},
+                        icon: const Image(
+                          image: AssetImage(googleLogo),
+                          width: 25,
+                        ),
+                        label: Text(
+                          googleText,
+                          style: Theme.of(context).textTheme.displaySmall,
                         ),
                       ),
-                    ],
-                  ),
-                ))
+                    ),
+                    TextButton(
+                      onPressed: () {},
+                      child: const Text(
+                        account,
+                        style: TextStyle(
+                          color: Colors.blue,
+                        ),
+                      ),
+                    )
+                  ],
+                )
               ],
             ),
           ),
