@@ -13,7 +13,7 @@ class LoginScreen extends StatelessWidget {
       child: Scaffold(
         body: SingleChildScrollView(
           child: Container(
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.all(35),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -31,6 +31,55 @@ class LoginScreen extends StatelessWidget {
                 ),
 
                 /*Second section of page */
+                Form(
+                    child: Container(
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 30,
+                  ),
+                  child: Column(
+                    children: [
+                      TextFormField(
+                        decoration: const InputDecoration(
+                          prefixIcon: Icon(Icons.person),
+                          border: OutlineInputBorder(),
+                          labelText: email,
+                          hintText: email,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      TextFormField(
+                        decoration: const InputDecoration(
+                          prefixIcon: Icon(Icons.fingerprint),
+                          suffixIcon: Icon(Icons.remove_red_eye_rounded),
+                          border: OutlineInputBorder(),
+                          labelText: password,
+                          hintText: password,
+                        ),
+                      ),
+                      Align(
+                        alignment: Alignment.centerRight,
+                        child: TextButton(
+                          onPressed: () {},
+                          child: const Text(
+                            forgotPassword,
+                            style: TextStyle(
+                              color: Colors.blue,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        width: double.infinity,
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          child: const Text(loginString),
+                        ),
+                      ),
+                    ],
+                  ),
+                ))
               ],
             ),
           ),
