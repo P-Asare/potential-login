@@ -11,7 +11,6 @@ class LoginScreen extends StatelessWidget {
         child: Container(
           child: Column(
             children: [
-              
             ],
           ),
         ),
