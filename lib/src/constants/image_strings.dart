@@ -10,3 +10,6 @@ const String onboardImage3 = "assets/images/onboard_image_3.png";
 
 /*Welcome screen */
 const String welcomeImage = "assets/images/sign_up_login_image_two.png";
+
+/*Login screen */
+const String googleLogo = "assets/images/google_logo.png";

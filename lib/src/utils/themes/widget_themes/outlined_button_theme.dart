@@ -6,7 +6,9 @@ class POutlinedButtonTheme {
   /* Light Theme */
   static final lightOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
-      shape: const RoundedRectangleBorder(),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(5.0),
+      ),
       foregroundColor: Colors.black87,
       side: const BorderSide(
         color: Colors.black87,
@@ -21,7 +23,9 @@ class POutlinedButtonTheme {
 
   static final darkOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
-      shape: const RoundedRectangleBorder(),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(5.0),
+      ),
       foregroundColor: Colors.white,
       side: const BorderSide(
         color: Colors.white,

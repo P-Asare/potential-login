@@ -25,10 +25,11 @@ const String loginString = "LOGIN";
 const String signUpString = "SIGNUP";
 
 // Login Screen
-const String mainTextLogin = "Welcome back,";
+const String mainTextLogin = "Welcome Back,";
 const String subTextLogin = "Make it right. Make it work. Make it in.";
 const String forgotPassword = "Forget Password?";
 const String email = "E-Mail";
 const String password = "Password";
 const String googleText = "Sign-in with Google";
-const String account = "Don't have an account?";
+const String account = "Already have an account?";
+const String smallSignup = " Signup";

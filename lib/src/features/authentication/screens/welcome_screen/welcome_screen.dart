@@ -27,6 +27,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
 
     return Scaffold(
       backgroundColor: (isDarkMode) ? Colors.black87 : Colors.yellow,
+      // ignore: avoid_unnecessary_containers
       body: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
