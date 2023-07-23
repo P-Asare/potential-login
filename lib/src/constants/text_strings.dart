@@ -32,3 +32,4 @@ const String email = "E-Mail";
 const String password = "Password";
 const String googleText = "Sign-in with Google";
 const String account = "Already have an account?";
+const String smallSignup = " Signup";

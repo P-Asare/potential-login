@@ -5,7 +5,9 @@ class PElevatedButtonTheme {
 
   static final lightElevatedButtonTheme = ElevatedButtonThemeData(
     style: OutlinedButton.styleFrom(
-      shape: const RoundedRectangleBorder(),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(5.0),
+      ),
       foregroundColor: Colors.white,
       backgroundColor: Colors.black87,
       elevation: 0,
@@ -17,7 +19,9 @@ class PElevatedButtonTheme {
 
   static final darkElevatedButtonTheme = ElevatedButtonThemeData(
     style: OutlinedButton.styleFrom(
-      shape: const RoundedRectangleBorder(),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(5.0),
+      ),
       foregroundColor: Colors.black87,
       backgroundColor: Colors.white,
       elevation: 0,

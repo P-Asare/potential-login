@@ -108,13 +108,21 @@ class LoginScreen extends StatelessWidget {
                     ),
                     TextButton(
                       onPressed: () {},
-                      child: const Text(
-                        account,
-                        style: TextStyle(
-                          color: Colors.blue,
+                      child: Text.rich(
+                        TextSpan(
+                          text: account,
+                          style: Theme.of(context).textTheme.bodySmall,
+                          children: const [
+                            TextSpan(
+                              text: smallSignup,
+                              style: TextStyle(
+                                color: Colors.blue,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                    )
+                    ),
                   ],
                 )
               ],
