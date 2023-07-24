@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:login_app/src/constants/image_strings.dart';
 import 'package:login_app/src/constants/text_strings.dart';
+import 'package:login_app/src/features/authentication/screens/signup_screen/signup_footer.dart';
 
 import 'signup_form.dart';
 import 'signup_header.dart';
@@ -27,6 +28,7 @@ class SignUpScreen extends StatelessWidget {
               children: [
                 SignupHeader(screenHeight: screenHeight),
                 SignupForm(boxSpace: boxSpace),
+                const SignupFooter(),
               ],
             ),
           ),
