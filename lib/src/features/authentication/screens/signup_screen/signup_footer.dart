@@ -16,7 +16,7 @@ class SignupFooter extends StatelessWidget {
           style: Theme.of(context).textTheme.bodySmall,
         ),
         const SizedBox(
-          height: 20,
+          height: 10,
         ),
         SizedBox(
           width: double.infinity,
@@ -36,11 +36,11 @@ class SignupFooter extends StatelessWidget {
           onPressed: () {},
           child: Text.rich(
             TextSpan(
-              text: account,
+              text: signupAccount,
               style: Theme.of(context).textTheme.bodySmall,
               children: const [
                 TextSpan(
-                  text: smallSignup,
+                  text: smallLogin,
                   style: TextStyle(
                     color: Colors.blue,
                   ),
