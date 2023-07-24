@@ -15,6 +15,7 @@ class LoginHeader extends StatelessWidget {
     return Align(
       alignment: Alignment.centerLeft,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image(
             image: const AssetImage(welcomeImage),
