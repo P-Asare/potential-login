@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:login_app/src/constants/image_strings.dart';
 import 'package:login_app/src/constants/text_strings.dart';
 
-class LoginHeader extends StatelessWidget {
-  const LoginHeader({
+class SignupHeader extends StatelessWidget {
+  const SignupHeader({
     super.key,
     required this.screenHeight,
   });
@@ -18,15 +18,17 @@ class LoginHeader extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image(
-            image: const AssetImage(welcomeImage),
+            image: const AssetImage(
+              welcomeImage,
+            ),
             height: screenHeight * 0.2,
           ),
           Text(
-            mainTextLogin,
+            mainTextSignup,
             style: Theme.of(context).textTheme.bodyLarge,
           ),
           Text(
-            subTextLogin,
+            subTextSignup,
             style: Theme.of(context).textTheme.displayMedium,
           ),
         ],

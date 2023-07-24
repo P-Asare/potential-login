@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_app/src/constants/text_strings.dart';
 import 'package:login_app/src/features/authentication/screens/login_screen/login_screen.dart';
+import 'package:login_app/src/features/authentication/screens/signup_screen/signup_screen.dart';
 
 import '../../../../constants/image_strings.dart';
 
@@ -15,6 +16,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   void allowLogin() {
     Navigator.of(context).push(MaterialPageRoute(
       builder: (context) => const LoginScreen(),
+    ));
+  }
+
+  void allowSignUP() {
+    Navigator.of(context).push(MaterialPageRoute(
+      builder: (context) => const SignUpScreen(),
     ));
   }
 
@@ -79,7 +86,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   ),
                   Expanded(
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () => allowSignUP(),
                       child: const Text(signUpString),
                     ),
                   )

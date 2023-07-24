@@ -31,5 +31,13 @@ const String forgotPassword = "Forget Password?";
 const String email = "E-Mail";
 const String password = "Password";
 const String googleText = "Sign-in with Google";
-const String account = "Already have an account?";
+const String account = "Don't have an account?";
 const String smallSignup = " Signup";
+
+// Signup Screen
+const String mainTextSignup = "Get On Board";
+const String subTextSignup = "Start your journey with us now";
+const String formName = "Full Name";
+const String formNumber = "Phone No";
+const String signupAccount = "Already have an account?";
+const String smallLogin = " Login";
