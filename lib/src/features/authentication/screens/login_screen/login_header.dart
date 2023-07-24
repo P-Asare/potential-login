@@ -12,22 +12,24 @@ class LoginHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Image(
-          image: const AssetImage(welcomeImage),
-          height: screenHeight * 0.2,
-        ),
-        Text(
-          mainTextLogin,
-          style: Theme.of(context).textTheme.bodyLarge,
-        ),
-        Text(
-          subTextLogin,
-          style: Theme.of(context).textTheme.displayMedium,
-        ),
-      ],
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: Column(
+        children: [
+          Image(
+            image: const AssetImage(welcomeImage),
+            height: screenHeight * 0.2,
+          ),
+          Text(
+            mainTextLogin,
+            style: Theme.of(context).textTheme.bodyLarge,
+          ),
+          Text(
+            subTextLogin,
+            style: Theme.of(context).textTheme.displayMedium,
+          ),
+        ],
+      ),
     );
   }
 }
-
